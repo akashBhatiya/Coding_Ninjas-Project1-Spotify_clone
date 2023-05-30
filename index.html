@@ -1,0 +1,2078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vybify - Web Music Player</title>
+    <link rel="icon" href="logo1.png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/05d1f8d0ed.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>  
+
+    <!-- ---pc class applied to elements which will only visible on width greter then 800px
+         ---simillarly mb class for width less then 800px devices.
+         ---There is no javascript and database applied so don't expect to play the songs of Tony kakkad
+         --- Note: This is only HTML/CSS project.
+    -->
+    
+    <div class="player pc">
+
+        <div class="song-card">
+            <div class="song-img">
+                <img src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f" alt="song img" width="60px">
+            </div>
+            <div class="song-details">
+                <p class="song-name" style="font-size:0.9rem"><b>PASOORI</b></p>
+                <p class="song-artist" style="font-size:0.8rem;color:var(--theme-grey-text);">Shae Gill</p>
+            </div>
+            <div class="like-btn">
+                <i class="fa-solid fa-heart" style="color: #ff0019;"></i>
+            </div>
+        </div>
+
+        <div class="song-control">
+            
+            <div class="flex-container btn-container ">
+                <div class="btn ani1"><i class="fa-solid fa-shuffle" style="font-size: 1rem;color: #ffffff;"></i></div>
+                <span style="width:5rem;"></span>
+                <div class="btn ani1"><i class="fa-solid fa-backward-step" style="font-size:1.4rem;color: #ffffff;"></i></div>
+                <div class="btn ani1"><i class="fa-solid fa-circle-pause" style="font-size:2.2rem;color: #16cd7a;"></i></div>
+                <div class="btn ani1"><i class="fa-solid fa-forward-step" style="font-size:1.4rem;color: #ffffff;"></i></div>
+                <span style="width:5rem;"></span>
+                <div class="btn ani1"><i class="fa-solid fa-music" style="font-size:0.9rem;color: #ffffff;"></i></div>
+            </div>
+
+            <div class="flex-container indicator">
+                <div><p style="margin:auto;font-size:0.8rem">3:04</p></div>
+                <div class="bar">
+                    <div class="slider"></div>
+                    <div class="pointer"></div>
+                </div>
+                <div><p style="margin:auto; font-size:0.8rem">5:26</p></div>
+            </div>
+
+        </div>
+
+        <div class="sound-control">    
+
+            <div class="menu-container" style="margin: 0 2rem;">
+                
+                <div class="menu-icon ani1">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </div>
+                <div class="menu">
+                    <a href="#">Lyrics</a>
+                    <a href="#">Connect to a device</a>
+                    <a href="#">Queue</a>
+                </div>      
+                
+            </div>
+
+            <div class="ani1">
+                <i class="fa-solid fa-volume-high" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="bar">
+                <div class="slider"></div>
+                <div class="pointer"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="m-player mb">
+        <div class="song-card">
+            <div class="img-container">
+                <img src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f" alt="" height="50px">
+            </div>
+
+            <div class="song-details">
+                <p>Pasoori</p>
+                <p style="font-size:0.7rem; color:var(--theme-grey-text);">Shae Gill</p>
+            </div>
+
+            <div class="btn-container">
+                <i class="fa-solid fa-sliders" style="color: #ffffff;"></i>
+            </div>
+
+            <div class="btn-container">
+                <i class="fa-solid fa-heart" style="color: #dd083d;"></i>
+            </div>
+
+            <div class="btn-container">
+                <i class="fa-solid fa-play" style="color: #ffffff;"></i>
+            </div>
+
+        </div>
+
+        <div class="bar">
+            <div class="slider"></div>
+        </div>
+
+    </div>
+
+    <div class="m-navbar mb">
+
+        <div class="btn-container">
+            <i class="fa-solid fa-house ani1" style="color: #ffffff;"></i>
+        </div>
+        <div class="btn-container">
+            <i class="fa-solid fa-magnifying-glass ani1" style="color: #ffffff;"></i>
+        </div>
+        <div class="btn-container">
+            <i class="fa-solid fa-compact-disc ani1" style="color: #ffffff;"></i>
+        </div>
+        <div class="btn-container">
+            <i class="fa-solid fa-gear ani1" style="color: #ffffff;"></i>
+        </div>
+
+    </div>
+
+    <!-- Main element -->
+
+    <main>
+
+        <div class="logo-container pc">
+            <a href="#"><img src="logo.png" width="120px"></a>
+        </div>
+        <!-- Left aside section -->
+        <div class="left pc">
+
+            <div class="left-header">
+                <span>
+                    <p style="margin:0;"><a href="#" style="color:white;">Queue</a> / <a href="#">Library</a></p>
+                </span>
+            </div>
+
+            <div class="left-content">
+                
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>1.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d00001e023f3d35703bdcd917dad51c4f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Pasoori- Shae Gill</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-pause" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>2.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ee22470d9fbb49cb3d4df38c" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Brown Munde</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>3.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>295</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>4.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732a46046339bd779f95a8cf8b" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>No Love</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>5.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d7f38f6d53d1373e7e314988" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>We Rollin</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>6.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273942a0c9ac8f1def7c8805044" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>The Search</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>7.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd9e9490d5198c41cb85b669" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Fight Back</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>8.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739d0498e2952cd8eb3a58243f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Eshay</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>9.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273600adbc750285ea1a8da249f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>The Box</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>10.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273abc40a559829c1a93b92c276" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Safari</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>11.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273272737b42d9e9eaa05200d54" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Bad Liar</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>12.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2738a3f0a3ca7929dea23cd274c" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Lovely</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>13.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a954408e456d4d9d410f448b" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Arcade</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>14.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a9897f65d1ead1be10a51e3f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Infinity</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>15.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd26ede1ae69327010d49946" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Love Again</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>16.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273459d675aa0b6f3b211357370" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Let Me Down Slowly</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>17.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273aa597e50829169e6994eb403" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Enemy</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>18.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27371913d899f72b821f6f35c09" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Old Skool</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>19.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b9cb06235388595c62fc97cc" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Same Beef</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>20.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735b74e703d6ffb2ea16860c86" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Excuses</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>21.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2736a38d9b096e62a96f2d9a5bc" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Arrogant</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>22.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d00001e02ee22470d9fbb49cb3d4df38c" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Brown Munde</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>23.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2731d1cc2e40d533d7bcebf5dae" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>295</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>24.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2732a46046339bd779f95a8cf8b" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>No Love</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>25.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273d7f38f6d53d1373e7e314988" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>We Rollin</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>26.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273942a0c9ac8f1def7c8805044" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>The Search</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>27.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd9e9490d5198c41cb85b669" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Fight Back</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>28.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2739d0498e2952cd8eb3a58243f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Eshay</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>29.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273600adbc750285ea1a8da249f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>The Box</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>30.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273abc40a559829c1a93b92c276" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Safari</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>31.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273272737b42d9e9eaa05200d54" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Bad Liar</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>32.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2738a3f0a3ca7929dea23cd274c" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Lovely</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>33.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a954408e456d4d9d410f448b" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Arcade</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>34.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273a9897f65d1ead1be10a51e3f" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Infinity</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>35.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273bd26ede1ae69327010d49946" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Love Again</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>36.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273459d675aa0b6f3b211357370" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Let Me Down Slowly</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>37.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273aa597e50829169e6994eb403" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Enemy</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>38.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b27371913d899f72b821f6f35c09" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Old Skool</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>39.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b9cb06235388595c62fc97cc" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Same Beef</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>40.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2735b74e703d6ffb2ea16860c86" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Excuses</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div class="song-list-card">
+
+                    <div class="sr-no">
+                        <p>41.</p>
+                    </div>
+
+                    <div class="img-container">
+                        <img src="https://i.scdn.co/image/ab67616d0000b2736a38d9b096e62a96f2d9a5bc" alt="" width="100%">
+                    </div>
+
+                    <div class="song-name">
+                        <p>Arrogant</p>
+                    </div>
+
+                    <div class="play-btn ani1"> 
+                        <i class="fa-solid fa-circle-play" style="font-size:2rem;color: #16cd7a;"></i>
+                    </div>
+
+                </div>
+
+                <div style="height:5rem;"></div>
+
+            </div>
+
+        </div>
+
+        <div class="section-line pc"></div>
+        <!-- right main home page of the screen -->
+        <div class="right">
+
+            <div class="right-header">
+                <div class="flex-container btn-container">
+                    <div id="upgrade-button" class="users ani1">
+                        <button class="btn"><p><b>Upgrade</b></p></button>
+                    </div>
+                    <div id="multi-user-icon" class="users ani1">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div id="user-icon" class="users ani1">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="right-content">
+
+                <div class="m-logo-container mb">
+                    <img src="m-logo.png" alt="" width="180px">
+                </div>
+                
+                <div id="nh1-id1" class="nh1">
+
+                    <div class="nh1-heading">
+                        <p class="nh1-heading-content"><b>Good morning</b></p>
+                    </div>
+
+                    <div class="nh1-content">
+
+                        <div id="nh1-c1" class="nh1-card">
+
+                            <div class="card-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlHfwvsPOkhBgpD-3jzm4oM4U_bA45EmGAOQ&usqp=CAU" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist1</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="nh1-c2" class="nh1-card">
+                            
+                            <div class="card-img">
+                                <img src="https://i.scdn.co/image/ab67706f00000002236f120ea0b35cf85a0d7126" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist2</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="nh1-c3" class="nh1-card">
+
+                            <div class="card-img">
+                                <img src="https://i.scdn.co/image/ab67706f00000002e6b541d9d6da29b48a886385" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist3</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="nh1-c4" class="nh1-card">
+
+                            <div class="card-img">
+                                <img src="https://i.scdn.co/image/ab67706f0000000312a004bdcbed2db71b772a99" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist4</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="nh1-c5" class="nh1-card">
+
+                            <div class="card-img">
+                                <img src="https://i.scdn.co/image/ab67706f00000002a5bd4ada35d4948a7c03fd94" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist5</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>
+
+                        </div>
+
+                        <div id="nh1-c6" class="nh1-card">
+
+                            <div class="card-img">
+                                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO1PXZsc-default.jpg" alt="" height="100%">
+                            </div>
+
+                            <div class="playlist-name">
+                                <p class="mg">Playlist6</p>
+                            </div>
+
+                            <div class="play-btn ani1"> 
+                                <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                            </div>  
+
+                        </div>
+
+
+                    </div>
+                    
+                </div>
+
+                <div id="nh2-id1" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Made for You</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id1-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd8b9980db67272cb4d2c3daf/1/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id1-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb14a8f509151ea8cbba5c75d5/2/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id1-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb260044c082d05531fb8b8807/3/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id1-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebad65800f55f7a8d7d917624b/4/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id1-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3c12a86b401cb303c343654c/5/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh3-id1" class="nh3">
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Your favorite artists</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh3-content">
+
+                        <div class="nh3-card">
+                            <img class="ani1 " src="https://images.hellomagazine.com/horizon/square/df341f077f91-ed-sheeran-home-video-t.jpg" alt="" width="100%">
+                            <div class="nh3-artist">
+                                Ed Sheran
+                            </div>
+                        </div>
+
+                        <div class="nh3-card">
+                            <img class="ani1" src="https://cdns-images.dzcdn.net/images/artist/a39c5b12404120a63984a9181359e8d4/500x500.jpg" alt="" width="100%">
+                            <div class="nh3-artist">
+                                Rauf & Faik
+                            </div>
+                        </div>
+
+                        <div class="nh3-card">
+                            <img class="ani1" src="https://i.scdn.co/image/ab6761610000e5eb6be070445b03e0b63147c2c1" alt="" width="100%">
+                            <div class="nh3-artist">
+                                Post Malon
+                            </div>
+                        </div>
+
+                        <div class="nh3-card">
+                            <img class="ani1" src="https://i.scdn.co/image/ab6761610000e5eb65d54c88ab4c1abf204b360f" alt="" width="100%">
+                            <div class="nh3-artist">
+                                Sidhu
+                            </div>
+                        </div>
+
+                        <div class="nh3-card">
+                            <img class="ani1" src="https://i.scdn.co/image/ab67616100005174a00b11c129b27a88fc72f36b" alt="" width="100%">
+                            <div class="nh3-artist">
+                                Eminem
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div id="nh2-id2" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Your Top Mixes</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id2-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.pinimg.com/originals/cc/f7/b2/ccf7b23b67fc46919be6ac07634d5bfc.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id2-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://marketplace.canva.com/EAEdft48JIs/1/0/1600w/canva-orange-skyline-tumblr-aesthetic-love-songs-playlist-cover-mCNRRGaWFgU.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id2-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://e1.pxfuel.com/desktop-wallpaper/213/149/desktop-wallpaper-sunset-spotify-playlist-cover-spotify-covers-thumbnail.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id2-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://static.wikia.nocookie.net/62c10ca1-f324-4b12-8da6-29390c948a35/scale-to-width/755" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id2-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/300/ab67616d00001e025a41b6c530b167ffba6a92f5ab67616d00001e02d84a9bbcba91cb6a4a212b1bab67616d00001e02dcef905cb144d4867119850bab67616d00001e02ef9be92a4b4ab24ec6448509" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id3" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Recently Played</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id3-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e0255d1ce94d8e01ef85701f75dab67616d00001e02ad99b6d37539d3638627721dab67616d00001e02b41ec7af97d784992f951343ab67616d00001e02dc0696701a703ab0b9483a87" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id3-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e022160c02bc56f192df0f4986bab67616d00001e023d16809ca253f0f476195941ab67616d00001e02530cec85d4543693bd726167ab67616d00001e02cf871e6326e334bfa92cff20" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id3-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67706c0000da84102deba44b0587ab195663f4" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id3-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e026fd209ba0b69ed8a3e2e0349ab67616d00001e027aa3700d9c7db21c2c5226c6ab67616d00001e02a359d88b8368698c7c44add9ab67616d00001e02a56fd563abc1c9017d6b53f0" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id3-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.pinimg.com/736x/06/2f/64/062f646436303f9f8b3d3681f114d7e7.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id4" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Episodes for you</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id4-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://media1.popsugar-assets.com/files/thumbor/7bXsXrphzkhXFdGbynT7_MKeVE4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/11/05/039/n/3019466/8ad1e02cd6f1c891_cover.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id4-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTgxMjE3ODczNTA0MTI0/songs-of-summer.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id4-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67616100005174f9736f54357de6014f551fca" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id4-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO2Sjr0c-default.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id4-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67706f000000020158aa9cf42ea39991f26564" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id5" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Made for You</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id5-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd8b9980db67272cb4d2c3daf/1/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id5-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb14a8f509151ea8cbba5c75d5/2/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id5-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb260044c082d05531fb8b8807/3/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id5-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebad65800f55f7a8d7d917624b/4/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id5-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb3c12a86b401cb303c343654c/5/en/default" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id6" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Your Top Mixes</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id6-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.pinimg.com/originals/cc/f7/b2/ccf7b23b67fc46919be6ac07634d5bfc.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id6-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://marketplace.canva.com/EAEdft48JIs/1/0/1600w/canva-orange-skyline-tumblr-aesthetic-love-songs-playlist-cover-mCNRRGaWFgU.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id6-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://e1.pxfuel.com/desktop-wallpaper/213/149/desktop-wallpaper-sunset-spotify-playlist-cover-spotify-covers-thumbnail.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id6-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://static.wikia.nocookie.net/62c10ca1-f324-4b12-8da6-29390c948a35/scale-to-width/755" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id6-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/300/ab67616d00001e025a41b6c530b167ffba6a92f5ab67616d00001e02d84a9bbcba91cb6a4a212b1bab67616d00001e02dcef905cb144d4867119850bab67616d00001e02ef9be92a4b4ab24ec6448509" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id7" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Recently Played</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id7-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e0255d1ce94d8e01ef85701f75dab67616d00001e02ad99b6d37539d3638627721dab67616d00001e02b41ec7af97d784992f951343ab67616d00001e02dc0696701a703ab0b9483a87" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id7-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e022160c02bc56f192df0f4986bab67616d00001e023d16809ca253f0f476195941ab67616d00001e02530cec85d4543693bd726167ab67616d00001e02cf871e6326e334bfa92cff20" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id7-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67706c0000da84102deba44b0587ab195663f4" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id7-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://mosaic.scdn.co/640/ab67616d00001e026fd209ba0b69ed8a3e2e0349ab67616d00001e027aa3700d9c7db21c2c5226c6ab67616d00001e02a359d88b8368698c7c44add9ab67616d00001e02a56fd563abc1c9017d6b53f0" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id7-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.pinimg.com/736x/06/2f/64/062f646436303f9f8b3d3681f114d7e7.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div id="nh2-id8" class="nh2">
+
+                    <div class="nh2-heading">
+                        <div class="nh2-heading-name">Episodes for you</div>
+                        <div class="nh2-show-more"><a href="#" >Show more </a></div>
+                    </div>
+
+                    <div class="nh2-content">
+
+                        <div id="nh2-id8-c1" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://media1.popsugar-assets.com/files/thumbor/7bXsXrphzkhXFdGbynT7_MKeVE4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/11/05/039/n/3019466/8ad1e02cd6f1c891_cover.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 1</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id8-c2" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://parade.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkwNTgxMjE3ODczNTA0MTI0/songs-of-summer.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 2</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id8-c3" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67616100005174f9736f54357de6014f551fca" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 3</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id8-c4" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://thisis-images.scdn.co/37i9dQZF1DZ06evO2Sjr0c-default.jpg" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 4</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div id="nh2-id8-c5" class="nh2-card">
+                            <a href="#">
+                                <div class="nh2-img">
+                                <img src="https://i.scdn.co/image/ab67706f000000020158aa9cf42ea39991f26564" alt="" width="80%">
+                                <div class="play-btn"> 
+                                    <i class="fa-solid fa-circle-play" style="font-size:3rem;color: #16cd7a;"></i>
+                                </div>
+                                </div>
+
+                                <div class="nh2-card-content">
+                                <div class="nh2-card-name" >
+                                    <p style="margin:0;">Daily mix 5</p>
+                                </div>
+                                <div class="nh2-artist">
+                                    <p style="margin-top:0.2rem;">Billy Eilish, Post Malon and more</p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div style="height:10rem;"></div>
+
+            </div>
+
+        </div>       
+
+    </main>
+    
+</body>
+</html>
